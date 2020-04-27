@@ -1,10 +1,9 @@
 ﻿# jamiegl.com
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/jamiegluk/jamiegl?color=blue)
-![GitHub publish Workflow Status](https://img.shields.io/github/workflow/status/jamiegluk/jamiegl/Publish%20Website?label=publish)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fmemes.jamiegl.com%2Fkiwi%2F)
 
-> Jamie Lievesley personal website at [jamiegl.com](https://jamiegl.com), [jamiegl.co.uk](https://jamiegl.co.uk) and [jamiegl.uk](https://jamiegl.uk).
+> Jamie Lievesley personal website at [jamiegl.com](https://jamiegl.com), [jamiegl.co.uk](https://jamiegl.co.uk) and [jamiegl.uk](http://jamiegl.uk).
 
 **[Click to View Website Online](https://jamiegl.com)**.
 
@@ -67,11 +66,16 @@ yarn install
 ## Known Issues
 
 - Content represents Jamie Lievesley in 2017, rather than 2020.
-- AJAX PHP files not included in repo.
+- \*.php and .htaccess files not included in repo.
+- .htaccess redirects not replicated in express.js test server.
 - Uses outdated and inlined jQuery and normalize.css dependencies.
+- Uses outdated and manually included "Firefox super responsive scroll" and "Stickyfill" dependencies.
 - Build process should be upgraded to use webpack.
 - Code is not minified.
+- Does not use TypeScript, SASS or HTML-templates.
 - > warning " > @prettier/plugin-php@0.14.0" has incorrect peer dependency "prettier@^1.15.0".
+- jamiegl.uk domain does not support HTTPS.
+- GitHub publish workflow not yet implemented.
 
 ## Contributing
 
