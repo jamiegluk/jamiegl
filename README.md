@@ -31,6 +31,7 @@
   - Opera.
   - Edge (both Chromium and pre-Chromium).
   - IE 10 and 11.
+  - Safari.
   - Android: Chrome, Firefox, WebView.
   - iOS: Safari, Chrome.
 
