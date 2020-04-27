@@ -12,16 +12,31 @@
     "jamiegluk",
     "website"
   ],
-  "author": "Jamie Lievesley",
-  "license": "MPL-2.0",
+  "homepage": "https://github.com/jamiegluk/jamiegl",
+  "bugs": {
+    "url": "https://github.com/jamiegluk/jamiegl/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jamiegluk/jamiegl.git"
   },
-  "bugs": {
-    "url": "https://github.com/jamiegluk/jamiegl/issues"
+  "license": "MPL-2.0",
+  "author": "Jamie Lievesley",
+  "scripts": {
+    "build": "yarn run clean && cpy \"**/*\" \"../dist/\" --cwd=src --parents && prettier --write dist",
+    "clean": "rimraf dist/*",
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write .",
+    "start": "yarn run build && node express.js"
   },
-  "homepage": "https://github.com/jamiegluk/jamiegl",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md,json,html,yml,php}": "prettier --write"
+  },
   "browserslist": [
     "last 1000 Chrome versions and since 2017-05",
     "last 1000 Firefox versions and since 2017-05",
@@ -31,14 +46,9 @@
     "last 1000 ChromeAndroid versions and since 2017-05",
     "last 1000 FirefoxAndroid versions and since 2017-05, IE 11, IE 10"
   ],
-  "scripts": {
-    "build": "yarn run clean && cpy src dist && prettier --write dist",
-    "clean": "rimraf dist/*",
-    "lint": "prettier --check .",
-    "lint:fix": "prettier --write .",
-    "start": "yarn run build && node express.js"
-  },
   "devDependencies": {
+    "@prettier/plugin-php": "^0.14.0",
+    "@prettier/plugin-xml": "^0.7.2",
     "@types/jquery": "^1.10.35",
     "@types/node": "^13.13.4",
     "cpy-cli": "^3.1.0",
@@ -46,14 +56,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.1.7",
     "prettier": "^2.0.5",
+    "prettier-plugin-packagejson": "^2.2.2",
     "rimraf": "^3.0.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,css,md,json,html,yml}": "prettier --write"
   }
 }

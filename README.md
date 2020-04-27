@@ -64,6 +64,15 @@ yarn install
 | `yarn lint`     | Run Prettier linter                                       |
 | `yarn lint:fix` | Run Prettier linter and fix issues                        |
 
+## Known Issues
+
+- Content represents Jamie Lievesley in 2017, rather than 2020.
+- AJAX PHP files not included in repo.
+- Uses outdated and inlined jQuery and normalize.css dependencies.
+- Build process should be upgraded to use webpack.
+- Code is not minified.
+- > warning " > @prettier/plugin-php@0.14.0" has incorrect peer dependency "prettier@^1.15.0".
+
 ## Contributing
 
 Not accepting pull requests. This is my personal website.

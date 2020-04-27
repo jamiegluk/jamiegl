@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+<channel>
+
+<title>Jamie Lievesley</title>
+<link>https://jamiegl.com/</link>
+<description>
+  Jamie Lievesley is an independent software developer;
+  producing works for the web, desktop and mobile devices.
+</description>
+<language>en-UK</language>
+<copyright>Copyright 2017, Jamie Lievesley</copyright>
+<managingEditor>jamie@jamiegl.co.uk</managingEditor>
+<webMaster>jamie@jamiegl.co.uk</webMaster>
+<category>Computing</category>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<ttl>1440</ttl>
+<image>
+  <url>https://jamiegl.com/img/jamie_960x1280.png</url>
+  <width>960</width>
+  <height>1280</height>
+  <title>Jamie Lievesley</title>
+  <link>https://jamiegl.com/</link>
+  <description>
+    Jamie Lievesley is an independent software developer;
+    producing works for the web, desktop and mobile devices.
+  </description>
+</image>
+
+<item>
+  <title>Profiles</title>
+  <link>https://jamiegl.com/#profiles</link>
+  <guid>https://jamiegl.com/#profiles</guid>
+  <pubDate>Wed, 08 Mar 2018 22:05:00 GMT</pubDate>
+  <description>Find me on social media and networking sites.</description>
+  <category>Social Media</category>
+  <enclosure
+        url="https://jamiegl.com/img/profile/linkedin_128.svg"
+        length="541"
+        type="image/svg+xml"
+      />
+</item>
+
+<item>
+  <title>About Me</title>
+  <link>https://jamiegl.com/#about</link>
+  <guid>https://jamiegl.com/#about</guid>
+  <pubDate>Wed, 08 Mar 2018 22:05:00 GMT</pubDate>
+  <description>Who am I amnd what do I do?.</description>
+  <category>Information</category>
+  <enclosure
+        url="https://jamiegl.com/img/jamie_chess_256x380.png"
+        length="278523"
+        type="image/png"
+      />
+</item>
+
+<item>
+  <title>Contact</title>
+  <link>https://jamiegl.com/#contact</link>
+  <guid>https://jamiegl.com/#contact</guid>
+  <pubDate>Wed, 08 Mar 2018 22:05:00 GMT</pubDate>
+  <description>How to get in touch with me. Addresses and numbers.</description>
+  <category>Contact</category>
+</item>
+
+</channel>
+</rss>

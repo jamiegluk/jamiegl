@@ -1,2 +1,79 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+## GITATTRIBUTES FOR WEB PROJECTS
+#
+# These settings are for any web project.
+#
+# Details per file setting:
+#   text    These files should be normalized (i.e. convert CRLF to LF).
+#   binary  These files are binary and should be left untouched.
+#
+# Note that binary is a macro for -text -diff.
+######################################################################
+
+# Auto detect
+##   Handle line endings automatically for files detected as
+##   text and leave all files detected as binary untouched.
+##   This will handle all files NOT defined below.
+*                 text=auto
+
+# Source code
+*.css             text
+*.htm             text diff=html
+*.html            text diff=html
+*.js              text
+*.json            text
+*.map             text -diff
+*.php             text diff=php
+*.sql             text
+*.xml             text
+*.xhtml           text diff=html
+
+# Documentation
+*.md              text
+*.txt             text
+LICENSE           text
+
+# Configs
+*.config          text
+.editorconfig     text
+.env              text
+.gitattributes    text
+.gitconfig        text
+.htaccess         text
+*.lock            text -diff
+package-lock.json text -diff
+*.yaml            text
+*.yml             text
+browserslist      text
+
+# Graphics
+*.ico             binary
+*.jpg             binary
+*.jpeg            binary
+*.png             binary
+# SVG treated as an asset (binary) by default.
+*.svg             text
+
+# Documents
+*.doc	            diff=astextplain
+*.DOC	            diff=astextplain
+*.docx            diff=astextplain
+*.DOCX            diff=astextplain
+*.pdf             diff=astextplain
+*.PDF             diff=astextplain
+*.csv             text
+
+# Archives
+*.jar             binary
+*.zip             binary
+
+# Executables
+*.exe             binary
+
+# RC files (like .babelrc or .eslintrc)
+*.*rc             text
+
+# Ignore files (like .npmignore or .gitignore)
+*.*ignore         text
+
+# Text files where line endings should be preserved
+*.patch           -text

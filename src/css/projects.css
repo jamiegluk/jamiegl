@@ -1,0 +1,41 @@
+/*
+	projects.css
+	Styles relating to project tiles (icons etc)
+  Jamie Lievesley Website
+	Jamie Lievesley (jamie@jamiegl.co.uk)
+	21 February 2017 20:15
+*/
+
+/* Icons on grid. */
+
+#project-dummy h3::before {
+  background-image: url("./../img/project/dummy32.png");
+}
+#project-4connectai h3::before {
+  background-image: url("./../img/project/fcai32.png");
+}
+#project-smartreg h3::before {
+  background-image: url("./../img/project/smartreg32.png");
+}
+
+/* Jamie image tweaks. */
+
+#about img {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("./../img/jamie_chess_256x380.png") no-repeat;
+  background-size: cover;
+  background-position: center top;
+  padding-left: 256px;
+}
+#about img.expanded {
+  height: 380px !important;
+  -webkit-transition: height 500ms;
+  transition: height 500ms;
+}
+#about img:not(.expanded) {
+  height: 128px !important;
+  -webkit-transition: height 500ms ease-out;
+  transition: height 500ms ease-out;
+}

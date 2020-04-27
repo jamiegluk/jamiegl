@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+  <!--
+	beta.html
+	(BETA FOR) Main page, my profile, my projects, about me etc.
+	Jamie Lievesley Project
+	Jamie Lievesley (jamie@jamiegl.co.uk)
+	20 February 2017 18:35
+-->
+
+  <head
+    prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#
+                  website: http://ogp.me/ns/website#"
+  >
+    <title>Jamie Lievesley</title>
+
+    <meta charset="utf-8" />
+    <!-- SEO for single link without .html -->
+    <link rel="canonical" href="https://jamiegl.com/beta" />
+    <!-- .com and .co.uk localities -->
+    <link href="https://jamiegl.com/" hreflang="x-default" rel="alternate" />
+    <link href="https://jamiegl.co.uk/" hreflang="en-uk" rel="alternate" />
+    <!-- Dimension fixes -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- HTML5 backwards compat fixer -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="https://jamiegl.com/img/favicon/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="https://jamiegl.com/img/favicon/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="https://jamiegl.com/img/favicon/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="https://jamiegl.com/img/favicon/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="https://jamiegl.com/img/favicon/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="https://jamiegl.com/img/favicon/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="https://jamiegl.com/img/favicon/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="https://jamiegl.com/img/favicon/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://jamiegl.com/img/favicon/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://jamiegl.com/img/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://jamiegl.com/img/favicon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://jamiegl.com/img/favicon/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://jamiegl.com/img/favicon/favicon-128.png"
+      sizes="128x128"
+    />
+    <meta name="application-name" content="Jamie Lievesley" />
+    <meta name="theme-color" content="#00796B" />
+    <meta name="msapplication-TileColor" content="#009688" />
+    <meta name="msapplication-navbutton-color" content="#607D8B" />
+    <meta
+      name="msapplication-TileImage"
+      content="https://jamiegl.com/img/favicon/mstile-144x144.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="https://jamiegl.com/img/favicon/mstile-70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="https://jamiegl.com/img/favicon/mstile-150x150.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="https://jamiegl.com/img/favicon/mstile-310x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="https://jamiegl.com/img/favicon/mstile-310x310.png"
+    />
+    <!-- Extra mobile stuff -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- RSS -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Jamie Lievesley's RSS Feed"
+      href="/rss"
+    />
+    <meta
+      name="msapplication-notification"
+      content="frequency=30;polling-uri=http://notifications.buildmypinnedsite.com/?feed=https://jamiegl.com/rss&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=https://jamiegl.com/rss&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=https://jamiegl.com/rss&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=https://jamiegl.com/rss&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=https://jamiegl.com/rss&amp;id=5; cycle=1"
+    />
+
+    <!-- Normalize.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+      integrity="sha256-t2/7smZfgrST4FS1DT0bs/KotCM74XlcqZN5Vu7xlrw="
+      crossorigin="anonymous"
+    />
+
+    <!-- Page Styles -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://oldcontent.jamiegl.com/jamie/styles/icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="./css/jamie.css" />
+    <link rel="stylesheet" type="text/css" href="./css/projects.css" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- Position:sticky polyfill -->
+    <script type="text/javascript" src="./js/stickyfill.min.js"></script>
+
+    <!-- Page Script -->
+    <script type="text/javascript" src="./js/jamie.js" async></script>
+
+    <!-- Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-93309210-1", "auto");
+      ga("send", "pageview");
+    </script>
+
+    <!-- Descriptive -->
+    <meta name="author" content="Jamie Lievesley" />
+    <meta
+      name="description"
+      content="Jamie Lievesley is an independent software developer; producing works for the web, desktop and mobile devices."
+    />
+    <meta
+      name="keywords"
+      content="jamie, lievesley, jamiegl, computing, software, professional, web, design, java, gerrard, php, html, css, python, embedded, server, artyfishl, arty-fishl, android, mobile, app, profile, information, develop, abertay"
+    />
+    <meta name="robots" content="index, follow" />
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Jamie Lievesley" />
+    <meta
+      itemprop="description"
+      content="Jamie Lievesley is an independent software developer; producing works for the web, desktop and mobile devices."
+    />
+    <meta
+      itemprop="image"
+      content="http://jamiegl.com/img/jamie_960x1280.png"
+    />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@_I_am_Jamie" />
+    <meta name="twitter:title" content="Jamie Lievesley" />
+    <meta
+      name="twitter:description"
+      content="Jamie Lievesley is an independent software developer; producing works for the web, desktop and mobile devices."
+    />
+    <meta name="twitter:creator" content="@_I_am_Jamie_" />
+    <meta
+      name="twitter:image"
+      content="https://jamiegl.com/img/favicon/mstile-310x310.png"
+    />
+    <!-- Open Graph markup for Facebook -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Jamie Lievesley" />
+    <meta
+      property="og:description"
+      content="Jamie Lievesley is an independent software developer; producing works for the web, desktop and mobile devices."
+    />
+    <meta property="og:site_name" content="Jamie Lievesley" />
+    <meta property="og:url" content="https://jamiegl.com" />
+    <meta
+      property="og:image"
+      content="https://jamiegl.com/img/jamie_960x1280.png"
+    />
+    <meta
+      property="og:image"
+      content="https://jamiegl.com/img/jamie_chess_256x380.png"
+    />
+    <meta
+      property="og:image"
+      content="https://jamiegl.com/img/favicon/mstile-310x310.png"
+    />
+    <meta
+      property="og:image"
+      content="https://jamiegl.com/img/favicon/mstile-310x150.png"
+    />
+    <meta
+      property="og:image"
+      content="https://jamiegl.com/img/jamie_chess_256x128.png"
+    />
+    <meta property="profile:first_name" content="Jamie" />
+    <meta property="profile:last_name" content="Lievesley" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <!-- Copyright -->
+    <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+    <meta name="dcterms.rightsHolder" content="Jamie Lievesley" />
+    <meta name="dcterms.rights" content="Copyright 2017, Jamie Lievesley" />
+    <meta name="dcterms.dateCopyrighted" content="2017" />
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Jamie Lievesley",
+        "jobTitle": "Independent Software Developer",
+        "award": "Computing BSc (Hons)",
+        "alumniOf": "University of Abertay",
+        "email": "jamie@jamiegl.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "17 Hawkhill",
+          "addressLocality": "Dundee",
+          "addressRegion": "UK",
+          "postalCode": "DD1 5DL"
+        }
+      }
+    </script>
+  </head>
+
+  <body itemscope itemtype="http://schema.org/Person">
+    <!-- Large header with name, logo, parallax scrolling background. -->
+    <header>
+      <div id="container-header-brand">
+        <h1 itemprop="name">Jamie Lievesley</h1>
+        <img src="./img/logo_circle_64.png" />
+      </div>
+    </header>
+
+    <!-- Fragment navigation; as tabs on desktop, drop-down menu on mobile. -->
+    <input type="checkbox" id="nav-control-cb" class="hidden" />
+    <label for="nav-control-cb" id="nav-control-outside"></label>
+    <nav>
+      <ul>
+        <li id="tab-menu">
+          <label for="nav-control-cb">
+            <span class="withIcon accent darkhover ic-menu">Menu</span></label
+          >
+        </li>
+        <li id="tab-header">
+          <a href="#" class="nostyle">
+            <span class="withIcon accent darkhover ic-me"
+              >Jamie Lievesley</span
+            ></a
+          >
+        </li>
+        <li id="tab-profiles">
+          <a href="#profiles" class="nostyle">
+            <span class="withIcon accent darkhover ic-people">Profiles</span></a
+          >
+        </li>
+        <li id="tab-portfolio">
+          <a href="#portfolio" class="nostyle">
+            <span class="withIcon accent darkhover ic-briefcase"
+              >Portfolio</span
+            ></a
+          >
+        </li>
+        <li id="tab-about">
+          <a href="#about" class="nostyle">
+            <span class="withIcon accent darkhover ic-information"
+              >About&nbsp;Me</span
+            ></a
+          >
+        </li>
+        <li id="tab-contact">
+          <a href="#contact" class="nostyle">
+            <span class="withIcon accent darkhover ic-email">Contact</span></a
+          >
+        </li>
+      </ul>
+      <label for="nav-control-cb" id="nav-control-inside"></label>
+    </nav>
+
+    <!-- Page content (non-chrome) container. -->
+    <div id="container-main">
+      <!-- Short summary text below header. -->
+      <section id="summary">
+        <article class="textbox">
+          <p>
+            Jamie Lievesley is an
+            <span itemprop="jobTitle">independent software developer</span>;
+            producing works for the web, desktop and mobile devices.
+          </p>
+        </article>
+      </section>
+
+      <!-- Grid of Profile link buttons as Tiles -->
+      <section id="profiles">
+        <h2 class="section-heading withIcon accent ic-people">Profiles</h2>
+        <article class="container-icons lightbg">
+          <!-- LinkedIn -->
+          <div
+            role="button"
+            id="portfolio-linkedin"
+            style="background-color: #0077b5;"
+          >
+            <a
+              class="nostyle"
+              target="_blank"
+              href="https://www.linkedin.com/in/jamie-lievesley"
+            >
+              <img src="./img/profile/linkedin_128.svg" alt="LinkedIn" />
+            </a>
+          </div>
+
+          <!-- Google Play -->
+          <div
+            role="button"
+            id="portfolio-googleplay"
+            style="background-color: rgb(104, 159, 56);"
+          >
+            <a
+              class="nostyle"
+              target="_blank"
+              href="https://play.google.com/store/apps/developer?id=ArtyFishL"
+            >
+              <img src="./img/profile/google_play_128.svg" alt="Google Play" />
+            </a>
+          </div>
+
+          <!-- Facebook -->
+          <div
+            role="button"
+            id="portfolio-facebook"
+            style="background-color: #3b5998;"
+          >
+            <a
+              class="nostyle"
+              target="_blank"
+              href="https://www.facebook.com/jamie.lievesley"
+            >
+              <img src="./img/profile/facebook_128.svg" alt="Facebook" />
+            </a>
+          </div>
+
+          <!-- Instagram -->
+          <div
+            role="button"
+            id="portfolio-instagram"
+            style="background-color: #c13584;"
+          >
+            <a
+              class="nostyle"
+              target="_blank"
+              href="https://www.instagram.com/scottish_jamie/"
+            >
+              <img src="./img/profile/instagram_128.svg" alt="Instagram" />
+            </a>
+          </div>
+
+          <!-- Google Plus -->
+          <div
+            role="button"
+            id="portfolio-googleplus"
+            style="background-color: #d34836;"
+          >
+            <a
+              class="nostyle"
+              target="_blank"
+              href="https://plus.google.com/+JamieLievesley"
+            >
+              <img src="./img/profile/google_plus_128.svg" alt="Google Plus" />
+            </a>
+          </div>
+
+          <!-- Twitter -->
+          <!--<div role="button" id="portfolio-twitter" style="background-color:#1DA1F2">
+  			  <a class="nostyle" target="_blank" href="https://twitter.com/_I_am_Jamie_">
+  					<img src="./img/profile/twitter_128.svg" alt="Twitter" />
+  			  </a>
+        </div>-->
+
+          <!-- Youtube -->
+          <div
+            role="button"
+            id="portfolio-youtube"
+            style="background-color: #cd201f;"
+          >
+            <a
+              class="nostyle"
+              target="_blank"
+              href="https://www.youtube.com/channel/UCyT8Lb6U9giMoK7FC0-XVyA"
+            >
+              <img src="./img/profile/youtube_128.svg" alt="YouTube" />
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Grid of Portfolio projects as Tiles -->
+      <section id="portfolio">
+        <h2 class="section-heading withIcon accent ic-briefcase">Portfolio</h2>
+        <article class="container-grid lightbg">
+          <!-- SmartReg -->
+          <div role="button" id="project-smartreg">
+            <a
+              class="nostyle"
+              href="//uni.jamiegl.com/gradshow/smartreg"
+              target="blank"
+            >
+              <span>
+                <h3 class="withIcon">SmartReg</h3>
+                <span class="subtitle">Honours Project</span>
+                <p>
+                  Abertay Smart Register is an RFID and Bluetooth electronic
+                  attendance system for university classrooms and lectures.
+                </p>
+                <span class="a withIcon accent ic-more">More</span>
+                <img
+                  src="./img/project/smartreg256.png"
+                  alt="[Product Image]"
+                /> </span
+            ></a>
+          </div>
+
+          <!-- 4 Connect AI -->
+          <div role="button" id="project-4connectai">
+            <a
+              class="nostyle"
+              href="https://play.google.com/store/apps/details?id=com.artyfishl.connect4ai"
+              target="_blank"
+            >
+              <span>
+                <h3 class="withIcon">4 Connect AI</h3>
+                <span class="subtitle">Android App</span>
+                <p>A game of matching 4 counters in a row.</p>
+                <span class="a withIcon accent ic-google-play"
+                  >View on Google Play Store</span
+                >
+                <img
+                  src="./img/project/fcai256.png"
+                  alt="[Product Image]"
+                /> </span
+            ></a>
+          </div>
+        </article>
+      </section>
+
+      <!-- About Me (with expanding text/image) -->
+      <section id="about">
+        <h2 class="section-heading withIcon accent ic-information">
+          About&nbsp;Me
+        </h2>
+        <article class="textbox" data-fitimgright="true">
+          <img
+            src="./img/jamie_chess_256x128.png"
+            title="Me"
+            class="right"
+            style="height: 128px;"
+            itemprop="image"
+          />
+          <p>
+            I recently graduated with a First Class honours and a 4.08 GPA in
+            <span itemprop="award">Computing BSc (Hons)</span> from the
+            <span itemprop="alumniOf">University of Abertay</span>
+            in Dundee, Scotland. I produce various software and websites in my
+            spare time.
+          </p>
+          <input
+            id="expandable-about-controlcb"
+            type="checkbox"
+            autocomplete="false"
+            class="expandable-controlcb"
+            onload="$(this).prop('checked', false)"
+          />
+          <span class="expandable">
+            <p>
+              Specialising in Java for desktop, but with experience in Python,
+              C#, Pascal and more, I can produce cross-platform polished
+              software to fit most tasks thrown at me. Furthermore, these skills
+              carry over to Android for development with mobile technologies,
+              using the most up-to-date techniques and software.
+            </p>
+            <p>
+              On the web, I cater to the entire eco-system. From front-end
+              design and deployment, to back end scripting and information
+              systems. I am proficient in HTML5, CSS3, SASS and JavaScript
+              (covering jQuery). Websites I develop always use modern design
+              ideoligies, such as Google's Material Design, with clean and
+              colour-coordinated interfaces that look good, whilst being
+              designed with ergonomics at the core. Such websites reflect the
+              modern concept of responsive design for a range of device sizes
+              and input methods. On the back-end I use PHP, NodeJS, Python,
+              MySQL and Apache Server technologies to tie everything together. I
+              have worked with Hadoop and related technologies and have a basic
+              understanding of enterprise-level, big-data systems. I can use
+              various build environments and frameworks; such as Grunt, NPM,
+              YARN, Git, React, Bootstrap, Webpack and more.
+            </p>
+            <p>
+              My Honours project is titled "<i
+                >Implementing an Electronic Student Self-Service Attendance
+                System for University Classrooms and Lectures</i
+              >" and aims to replace the outdated paper-based class register
+              with an electronic, networked register process. This uses a
+              Raspberry Pi device hooked up to an RFID card reader for scanning
+              student cards and, alternatively, a bluetooth transciever for
+              detecting student mobile devices. For this, I succeeded and
+              received an A+ grade.
+            </p>
+          </span>
+          <label
+            class="nostyle withIcon accent darkhover ic-more"
+            for="expandable-about-controlcb"
+          ></label>
+        </article>
+      </section>
+
+      <!-- Contact (responsive two columns: form and details) -->
+      <section id="contact">
+        <h2 class="section-heading withIcon accent ic-email">Contact</h2>
+        <!-- Columns: 2 -->
+        <div class="cols-2">
+          <!-- Col 1: Contact Form -->
+          <article class="textbox container-form form-mark-optionals">
+            <!-- Contact Form ajax loading spinner -->
+            <div
+              id="container-form-loading-contact_form"
+              class="container-form-loading hidden"
+            >
+              <figure class="container-loading-spinner">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="spinner"
+                >
+                  <circle
+                    class="path"
+                    cx="50"
+                    cy="50"
+                    r="20"
+                    fill="none"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                  />
+                </svg>
+                <figcaption class="ellipsisAfter">Loading</figcaption>
+              </figure>
+            </div>
+
+            <!-- Contact Form status messages -->
+            <div
+              id="container-form-messages-contact_form"
+              class="container-form-messages"
+            >
+              <!-- Contact Form error -->
+              <div id="container-form-fail-contact_form" class="textbox hidden">
+                <h3 class="error">Loading Failed</h3>
+                <p>
+                  The content could not be loaded. <br />
+                  You can reload the page to try again.
+                </p>
+              </div>
+              <!-- Contact Form success -->
+              <div
+                id="container-form-success-contact_form"
+                class="textbox hidden"
+              >
+                <h3>Success</h3>
+                <p>
+                  Your message was sent successfully! <br />
+                  We will try and handle your query as soon as possible.
+                </p>
+              </div>
+            </div>
+
+            <!-- Contact Form itself -->
+            <form
+              id="contact_form"
+              onsubmit="submitForm('contact_form'); return false;"
+              action="./ajax/contact.php"
+              method="post"
+            >
+              <label for="contact_name">Name</label>
+              <input
+                id="contact_name"
+                name="name"
+                value=""
+                maxlength="50"
+                required=""
+                placeholder="eg. Bob Doe"
+                type="text"
+              />
+              <label for="contact_email">Reply email</label>
+              <input
+                id="contact_email"
+                name="email"
+                value=""
+                maxlength="255"
+                placeholder="eg. bob@email.com"
+                type="text"
+              />
+              <label for="contact_subject">Subject</label>
+              <input
+                id="contact_subject"
+                name="subject"
+                value=""
+                maxlength="50"
+                required=""
+                placeholder="eg. My Query"
+                type="text"
+              />
+              <label for="contact_message">Message</label>
+              <textarea
+                id="contact_message"
+                name="message"
+                maxlength="255"
+                rows="5"
+                required=""
+                placeholder="eg. My query description"
+              ></textarea>
+
+              <br />
+
+              <!-- Meta-paramters -->
+              <input
+                id="contact_webpage"
+                name="webpage"
+                value="jamiegl"
+                type="hidden"
+              />
+              <input
+                id="contact_formtask"
+                name="task"
+                value="send"
+                type="hidden"
+              />
+
+              <!-- reCAPTCHA -->
+              <div
+                class="g-recaptcha"
+                data-sitekey="6Lf4shUTAAAAAIVpMW9wc_9nGvxY7RHqPsHz8xzZ"
+              ></div>
+
+              <div class="container-submit">
+                <input id="contact_submit" value="Send" type="submit" />
+              </div>
+            </form>
+          </article>
+
+          <!-- Col 2: Contact Details -->
+          <article class="textbox">
+            <p>Jamie&nbspLievesley</p>
+            <p
+              class="secondary"
+              itemprop="address"
+              itemscope
+              itemtype="http://schema.org/PostalAddress"
+            >
+              <span itemprop="streetAddress">17 Hawkhill</span> <br />
+              <span itemprop="addressLocality">Dundee</span> <br />
+              <span itemprop="postalCode">DD1 5DL</span> <br />
+              <span itemprop="addressRegion">UK</span>
+            </p>
+            <p>
+              <a
+                class="withIcon accent ic-email"
+                href="mailto:jamie@jamiegl.co.uk"
+                itemprop="email"
+                >jamie@jamiegl.co.uk</a
+              >
+              <br />
+              <a
+                class="withIcon accent ic-email"
+                href="mailto:1301781@abertay.ac.uk"
+                itemprop="email"
+                >1301781@abertay.ac.uk</a
+              >
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Copyright and About (legal etc) Footer -->
+      <div class="footer-fill">M</div>
+      <footer>
+        &copy; 2017 Jamie Lievesley
+      </footer>
+    </div>
+  </body>
+</html>
