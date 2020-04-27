@@ -7,7 +7,9 @@
 
 **[Click to View Website Online](https://jamiegl.com)**.
 
-**IMPORTANT: This project's code and content is old, from 2017, yet to be modernised; do not view this as an example of my current work.**
+## IMPORTANT
+
+**This project's code and content is old, from 2017, yet to be modernised; do not view this as an example of my current work.**
 
 ## Principles
 
