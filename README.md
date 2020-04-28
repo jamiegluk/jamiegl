@@ -1,4 +1,4 @@
-﻿# jamiegl.com
+﻿# JamieGL.com
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/jamiegluk/jamiegl?color=blue)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fmemes.jamiegl.com%2Fkiwi%2F)
