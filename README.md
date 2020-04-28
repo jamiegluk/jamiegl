@@ -39,7 +39,7 @@
 
 You need:
 
-- [Node.js](https://nodejs.org) and NPM / `choco install nodejs`
+- [Node.js](https://nodejs.org) / `choco install nodejs`
 - [Yarn](https://yarnpkg.com/) / `choco install yarn`
 
 Initially build dependencies via this command in the project folder:
