@@ -21,7 +21,7 @@
     "url": "git+https://github.com/jamiegluk/jamiegl.git"
   },
   "license": "MPL-2.0",
-  "author": "Jamie Lievesley",
+  "author": "Jamie Lievesley <jamie@jamiegl.co.uk> (https://jamiegl.co.uk)",
   "scripts": {
     "build": "yarn run clean && cpy \"**/*\" \"../dist/\" --cwd=src --parents && prettier --write dist",
     "clean": "rimraf dist/*",
