@@ -1,7 +1,7 @@
-﻿# JamieGL.com
+﻿# ![Logo](src/img/logo_circle_24.png) JamieGL.com
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/jamiegluk/jamiegl?color=blue)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fjamiegl.com)
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/jamiegluk/jamiegl?color=blue)](https://github.com/jamiegluk/jamiegl/releases)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fjamiegl.com)](https://jamiegl.com)
 
 > Jamie Lievesley personal website at [jamiegl.com](https://jamiegl.com), [jamiegl.co.uk](https://jamiegl.co.uk) and [jamiegl.uk](http://jamiegl.uk).
 
