@@ -5,11 +5,11 @@
 <title>Jamie Lievesley</title>
 <link>https://jamiegl.com/</link>
 <description>
-  Jamie Lievesley is an independent software developer;
-  producing works for the web, desktop and mobile devices.
+  Jamie Lievesley creates for the web, desktop and mobile devices.
+  Currently, a Senior Software Engineer at Biotronics 3D.
 </description>
 <language>en-UK</language>
-<copyright>Copyright 2017, Jamie Lievesley</copyright>
+<copyright>Copyright 2017-2020, Jamie Lievesley</copyright>
 <managingEditor>jamie@jamiegl.co.uk</managingEditor>
 <webMaster>jamie@jamiegl.co.uk</webMaster>
 <category>Computing</category>
@@ -22,8 +22,8 @@
   <title>Jamie Lievesley</title>
   <link>https://jamiegl.com/</link>
   <description>
-    Jamie Lievesley is an independent software developer;
-    producing works for the web, desktop and mobile devices.
+    Jamie Lievesley creates for the web, desktop and mobile devices.
+    Currently, a Senior Software Engineer at Biotronics 3D.
   </description>
 </image>
 
@@ -31,7 +31,7 @@
   <title>Profiles</title>
   <link>https://jamiegl.com/#profiles</link>
   <guid>https://jamiegl.com/#profiles</guid>
-  <pubDate>Wed, 08 Mar 2018 22:05:00 GMT</pubDate>
+  <pubDate>Mon, 24 Aug 2020 23:20:00 GMT</pubDate>
   <description>Find me on social media and networking sites.</description>
   <category>Social Media</category>
   <enclosure
@@ -45,8 +45,8 @@
   <title>About Me</title>
   <link>https://jamiegl.com/#about</link>
   <guid>https://jamiegl.com/#about</guid>
-  <pubDate>Wed, 08 Mar 2018 22:05:00 GMT</pubDate>
-  <description>Who am I amnd what do I do?.</description>
+  <pubDate>Mon, 24 Aug 2020 23:20:00 GMT</pubDate>
+  <description>Who am I and what do I do?.</description>
   <category>Information</category>
   <enclosure
         url="https://jamiegl.com/img/jamie_chess_256x380.png"
@@ -59,7 +59,7 @@
   <title>Contact</title>
   <link>https://jamiegl.com/#contact</link>
   <guid>https://jamiegl.com/#contact</guid>
-  <pubDate>Wed, 08 Mar 2018 22:05:00 GMT</pubDate>
+  <pubDate>Mon, 24 Aug 2020 23:20:00 GMT</pubDate>
   <description>How to get in touch with me. Addresses and numbers.</description>
   <category>Contact</category>
 </item>
