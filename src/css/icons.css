@@ -114,3 +114,15 @@
 .withIcon.darkhover.ic-me:hover {
   background-image: url("./../img/logo_circle_outline_black_24.png");
 }
+.withIcon.ic-b3d,
+.withIcon.branded.ic-b3d {
+  background-image: url("./../img/b3d_24.png");
+}
+.withIcon.dark.ic-b3d,
+.withIcon.darkhover.ic-b3d:hover {
+  background-image: url("./../img/b3d_dark_24.png");
+}
+.withIcon.light.ic-b3d,
+.withIcon.lighthover.ic-b3d:hover {
+  background-image: url("./../img/b3d_light_24.png");
+}

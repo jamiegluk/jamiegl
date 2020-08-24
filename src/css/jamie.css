@@ -476,6 +476,18 @@ nav ul li span.withIcon {
   display: inline-block;
 }
 
+.address-icon.withIcon {
+  display: inline-block;
+  content: "M";
+  color: transparent;
+  margin-right: 10px;
+  height: 18px;
+  width: 16px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 16px 16px;
+}
+
 /* Sections and headings */
 
 section {

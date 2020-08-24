@@ -674,6 +674,7 @@
                 maxlength="50"
                 required=""
                 type="text"
+                autocomplete="name"
               />
               <label for="contact_email">Reply email</label>
               <input
@@ -682,6 +683,7 @@
                 value=""
                 maxlength="255"
                 type="email"
+                autocomplete="email"
               />
               <label for="contact_subject">Subject</label>
               <input
@@ -691,6 +693,7 @@
                 maxlength="50"
                 required=""
                 type="text"
+                autocomplete="off"
               />
               <label for="contact_message">Message</label>
               <textarea
@@ -699,6 +702,7 @@
                 maxlength="255"
                 rows="5"
                 required=""
+                autocomplete="off"
               ></textarea>
 
               <br />
@@ -747,7 +751,9 @@
                 itemscope
                 itemtype="http://schema.org/PostalAddress"
               >
-                <span itemprop="contactType">Jamie Lievesley</span> <br />
+                <span class="address-icon withIcon branded ic-me"></span>
+                <span itemprop="contactType">Jamie Lievesley</span>
+                <br />
                 <span itemprop="addressLocality">Edinburgh</span> <br />
                 <span itemprop="postalCode">EH11</span> <br />
                 <span itemprop="addressRegion">UK</span>
@@ -758,7 +764,9 @@
                 itemscope
                 itemtype="http://schema.org/PostalAddress"
               >
-                <span itemprop="contactType">Biotronics 3D</span> <br />
+                <span class="address-icon withIcon branded ic-b3d"></span>
+                <span itemprop="contactType">Biotronics 3D</span>
+                <br />
                 <span itemprop="streetAddress">31 Palmerston Place</span> <br />
                 <span itemprop="addressLocality">Edinburgh</span> <br />
                 <span itemprop="postalCode">EH12 5AP</span> <br />
