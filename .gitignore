@@ -43,6 +43,8 @@ Temporary Items
 
 # VS Code
 .vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
 *.code-workspace
 .history/
 

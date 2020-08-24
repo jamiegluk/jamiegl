@@ -200,7 +200,7 @@
     <meta name="author" content="Jamie Lievesley" />
     <meta
       name="description"
-      content="Jamie Lievesley is an independent software developer; producing works for the web, desktop and mobile devices."
+      content="Jamie Lievesley creates for the web, desktop and mobile devices. Currently, a Senior Software Engineer at Biotronics 3D."
     />
     <meta
       name="keywords"
@@ -211,7 +211,7 @@
     <meta itemprop="name" content="Jamie Lievesley" />
     <meta
       itemprop="description"
-      content="Jamie Lievesley is an independent software developer; producing works for the web, desktop and mobile devices."
+      content="Jamie Lievesley creates for the web, desktop and mobile devices. Currently, a Senior Software Engineer at Biotronics 3D."
     />
     <meta
       itemprop="image"
@@ -223,7 +223,7 @@
     <meta name="twitter:title" content="Jamie Lievesley" />
     <meta
       name="twitter:description"
-      content="Jamie Lievesley is an independent software developer; producing works for the web, desktop and mobile devices."
+      content="Jamie Lievesley creates for the web, desktop and mobile devices. Currently, a Senior Software Engineer at Biotronics 3D."
     />
     <meta name="twitter:creator" content="@_I_am_Jamie_" />
     <meta
@@ -235,7 +235,7 @@
     <meta property="og:title" content="Jamie Lievesley" />
     <meta
       property="og:description"
-      content="Jamie Lievesley is an independent software developer; producing works for the web, desktop and mobile devices."
+      content="Jamie Lievesley creates for the web, desktop and mobile devices. Currently, a Senior Software Engineer at Biotronics 3D."
     />
     <meta property="og:site_name" content="Jamie Lievesley" />
     <meta property="og:url" content="https://jamiegl.com" />
@@ -274,16 +274,28 @@
         "@context": "http://schema.org/",
         "@type": "Person",
         "name": "Jamie Lievesley",
-        "jobTitle": "Independent Software Developer",
+        "jobTitle": "Senior Software Engineer",
         "award": "Computing BSc (Hons)",
         "alumniOf": "University of Abertay",
         "email": "jamie@jamiegl.com",
+        affiliation: {
+          "@type": "Organization",
+          name: "Biotronics 3D",
+          telephone: "+44 20 7093 0903",
+          url: "https://www.3dnetmedical.com/public/",
+          address: {
+            "@type": "PostalAddress",
+            "streetAddress": "31 Palmerston Place",
+            "addressLocality": "Edinburgh",
+            "addressRegion": "UK",
+            "postalCode": "EH12 5AP"
+          }
+        }
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "17 Hawkhill",
-          "addressLocality": "Dundee",
+          "addressLocality": "Edinburgh",
           "addressRegion": "UK",
-          "postalCode": "DD1 5DL"
+          "postalCode": "EH11"
         }
       }
     </script>
@@ -349,9 +361,16 @@
       <section id="summary">
         <article class="textbox">
           <p>
-            Jamie Lievesley is an
-            <span itemprop="jobTitle">independent software developer</span>;
-            producing works for the web, desktop and mobile devices.
+            <span class="line">
+              Jamie Lievesley creates for the web, desktop and mobile devices.
+            </span>
+            <span class="line">
+              Currently, a
+              <span itemprop="jobTitle">Senior Software Engineer</span> at
+              <a href="https://www.3dnetmedical.com/public/" itemprop="worksFor"
+                >Biotronics 3D</a
+              >.
+            </span>
           </p>
         </article>
       </section>
@@ -360,6 +379,21 @@
       <section id="profiles">
         <h2 class="section-heading withIcon accent ic-people">Profiles</h2>
         <article class="container-icons lightbg">
+          <!-- GitHub -->
+          <div
+            role="button"
+            id="portfolio-github"
+            style="background-color: #24292e;"
+          >
+            <a
+              class="nostyle"
+              target="_blank"
+              href="https://github.com/jamiegluk"
+            >
+              <img src="./img/profile/github_128.svg" alt="GitHub" />
+            </a>
+          </div>
+
           <!-- LinkedIn -->
           <div
             role="button"
@@ -390,21 +424,6 @@
             </a>
           </div>
 
-          <!-- Facebook -->
-          <div
-            role="button"
-            id="portfolio-facebook"
-            style="background-color: #3b5998;"
-          >
-            <a
-              class="nostyle"
-              target="_blank"
-              href="https://www.facebook.com/jamie.lievesley"
-            >
-              <img src="./img/profile/facebook_128.svg" alt="Facebook" />
-            </a>
-          </div>
-
           <!-- Instagram -->
           <div
             role="button"
@@ -420,18 +439,18 @@
             </a>
           </div>
 
-          <!-- Google Plus -->
+          <!-- Facebook -->
           <div
             role="button"
-            id="portfolio-googleplus"
-            style="background-color: #d34836;"
+            id="portfolio-facebook"
+            style="background-color: #3b5998;"
           >
             <a
               class="nostyle"
               target="_blank"
-              href="https://plus.google.com/+JamieLievesley"
+              href="https://www.facebook.com/jamie.lievesley"
             >
-              <img src="./img/profile/google_plus_128.svg" alt="Google Plus" />
+              <img src="./img/profile/facebook_128.svg" alt="Facebook" />
             </a>
           </div>
 
@@ -548,7 +567,7 @@
               design and deployment, to back end scripting and information
               systems. I am proficient in HTML5, CSS3, SASS and JavaScript
               (covering jQuery). Websites I develop always use modern design
-              ideoligies, such as Google's Material Design, with clean and
+              ideologies, such as Google's Material Design, with clean and
               colour-coordinated interfaces that look good, whilst being
               designed with ergonomics at the core. Such websites reflect the
               modern concept of responsive design for a range of device sizes
@@ -566,7 +585,7 @@
               >" and aims to replace the outdated paper-based class register
               with an electronic, networked register process. This uses a
               Raspberry Pi device hooked up to an RFID card reader for scanning
-              student cards and, alternatively, a bluetooth transciever for
+              student cards and, alternatively, a bluetooth transceiver for
               detecting student mobile devices. For this, I succeeded and
               received an A+ grade.
             </p>
@@ -650,7 +669,6 @@
                 value=""
                 maxlength="50"
                 required=""
-                placeholder="eg. Bob Doe"
                 type="text"
               />
               <label for="contact_email">Reply email</label>
@@ -659,8 +677,7 @@
                 name="email"
                 value=""
                 maxlength="255"
-                placeholder="eg. bob@email.com"
-                type="text"
+                type="email"
               />
               <label for="contact_subject">Subject</label>
               <input
@@ -669,7 +686,6 @@
                 value=""
                 maxlength="50"
                 required=""
-                placeholder="eg. My Query"
                 type="text"
               />
               <label for="contact_message">Message</label>
@@ -679,12 +695,11 @@
                 maxlength="255"
                 rows="5"
                 required=""
-                placeholder="eg. My query description"
               ></textarea>
 
               <br />
 
-              <!-- Meta-paramters -->
+              <!-- Meta-parameters -->
               <input
                 id="contact_webpage"
                 name="webpage"
@@ -712,33 +727,43 @@
 
           <!-- Col 2: Contact Details -->
           <article class="textbox">
-            <p>Jamie&nbspLievesley</p>
-            <p
-              class="secondary"
-              itemprop="address"
-              itemscope
-              itemtype="http://schema.org/PostalAddress"
-            >
-              <span itemprop="streetAddress">17 Hawkhill</span> <br />
-              <span itemprop="addressLocality">Dundee</span> <br />
-              <span itemprop="postalCode">DD1 5DL</span> <br />
-              <span itemprop="addressRegion">UK</span>
-            </p>
-            <p>
-              <a
-                class="withIcon accent ic-email"
-                href="mailto:jamie@jamiegl.co.uk"
-                itemprop="email"
-                >jamie@jamiegl.co.uk</a
+            <address>
+              <p>
+                <a
+                  class="withIcon accent ic-email"
+                  href="mailto:jamie@jamiegl.co.uk"
+                  itemprop="email"
+                  >jamie@jamiegl.co.uk</a
+                >
+                <br />
+              </p>
+              <p
+                class="secondary"
+                itemprop="address"
+                itemscope
+                itemtype="http://schema.org/PostalAddress"
               >
-              <br />
-              <a
-                class="withIcon accent ic-email"
-                href="mailto:1301781@abertay.ac.uk"
-                itemprop="email"
-                >1301781@abertay.ac.uk</a
+                <span itemprop="contactType">Jamie Lievesley</span> <br />
+                <span itemprop="addressLocality">Edinburgh</span> <br />
+                <span itemprop="postalCode">EH11</span> <br />
+                <span itemprop="addressRegion">UK</span>
+              </p>
+              <p
+                class="secondary"
+                itemprop="address"
+                itemscope
+                itemtype="http://schema.org/PostalAddress"
               >
-            </p>
+                <span itemprop="contactType">Biotronics 3D</span> <br />
+                <span itemprop="streetAddress">31 Palmerston Place</span> <br />
+                <span itemprop="addressLocality">Edinburgh</span> <br />
+                <span itemprop="postalCode">EH12 5AP</span> <br />
+                <span itemprop="addressRegion">UK</span>
+                <a itemprop="url" href="https://www.3dnetmedical.com/public/"
+                  >3dnetmedical.com</a
+                >
+              </p>
+            </address>
           </article>
         </div>
       </section>
@@ -746,7 +771,7 @@
       <!-- Copyright and About (legal etc) Footer -->
       <div class="footer-fill">M</div>
       <footer>
-        &copy; 2017 Jamie Lievesley
+        &copy; 2017-2020 Jamie Lievesley
       </footer>
     </div>
   </body>

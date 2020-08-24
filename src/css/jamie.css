@@ -472,6 +472,10 @@ nav ul li span.withIcon {
   color: #c8e6c9;
 }
 
+.line {
+  display: inline-block;
+}
+
 /* Sections and headings */
 
 section {
@@ -609,6 +613,7 @@ article.textbox {
   margin-bottom: 20px;
 }
 .container-form form input[type="text"],
+.container-form form input[type="email"],
 .container-form form textarea {
   width: 100%;
   max-width: 425px;
@@ -622,6 +627,7 @@ article.textbox {
   -webkit-caret-color: #607d8b;
 }
 .container-form form input[type="text"]:focus,
+.container-form form input[type="email"]:focus,
 .container-form form textarea:focus {
   color: #000000;
   border-bottom: 1px solid #00796b;
@@ -691,6 +697,8 @@ article.textbox {
 }
 
 .form-mark-optionals input[type="text"]:not([required]):not(.form-hideoptional),
+.form-mark-optionals
+  input[type="email"]:not([required]):not(.form-hideoptional),
 .form-mark-optionals textarea:not([required]):not(.form-hideoptional) {
   background-image: url("./../img/form_placeholder_bg_optional_256x64.png");
   background-size: auto 0.7em;
@@ -698,6 +706,7 @@ article.textbox {
   background-repeat: no-repeat;
 }
 .form-mark-requireds input[type="text"][required]:invalid,
+.form-mark-requireds input[type="email"][required]:invalid,
 .form-mark-requireds textarea[required]:invalid {
   background-image: url("./../img/form_placeholder_bg_required_256x64.png");
   background-size: auto 0.7em;
@@ -912,7 +921,7 @@ article h3 {
   bottom: 300px;
 }
 
-/* Rearange tiles that are very wide. */
+/* Rearrange tiles that are very wide. */
 @media screen and (min-width: 750px) {
   .container-grid > div:only-child {
     min-height: 286px;
@@ -941,7 +950,7 @@ article h3 {
   }
 }
 
-/* Expandable/collapsable text. */
+/* Expandable/collapsible text. */
 /* Format:
 	<input id="expandable-xxx-controlcb" type="checkbox" autocomplete="false"
 		class="expandable-controlcb" onload="$(this).prop('checked', false)" />

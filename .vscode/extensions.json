@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "ms-ceintl.vscode-language-pack-en-gb",
+    "nhoizey.gremlins",
+    "ybaumes.highlight-trailing-white-spaces",
+    "adambaldwin.vscode-nsp",
+    "esbenp.prettier-vscode",
+    "azsdktm.securityintellisense"
+  ]
+}
