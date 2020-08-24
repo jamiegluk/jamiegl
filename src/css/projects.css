@@ -24,13 +24,13 @@
   display: block;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: url("./../img/jamie_chess_256x380.png") no-repeat;
+  background: url("./../img/jamie_book_256x520.png") no-repeat;
   background-size: cover;
   background-position: center top;
   padding-left: 256px;
 }
 #about img.expanded {
-  height: 380px !important;
+  height: 520px !important;
   -webkit-transition: height 500ms;
   transition: height 500ms;
 }
