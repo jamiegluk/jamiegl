@@ -1,0 +1,37 @@
+# On release on master branch, uploads site, raw from 'www' dir, via FTP
+
+name: Publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    if: "!github.event.release.prerelease && github.event.release.target_commitish == 'master'"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install
+        uses: CultureHQ/actions-yarn@master
+        with:
+          args: install
+      - name: Lint
+        uses: CultureHQ/actions-yarn@master
+        with:
+          args: lint
+      - name: Build
+        uses: CultureHQ/actions-yarn@master
+        with:
+          args: build
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@3.0.0
+        with:
+          ftp-server: ftp://ftp.jamiegl.com/
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: dist
