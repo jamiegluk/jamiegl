@@ -9,7 +9,7 @@ on:
 
 jobs:
   publish:
-    if: "!github.event.release.prerelease && github.event.release.target_commitish == 'master'"
+    if: ${{ github.event_name == 'workflow_dispatch' || (!github.event.release.prerelease && github.event.release.target_commitish == 'master') }}
 
     runs-on: ubuntu-latest
 
