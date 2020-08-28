@@ -121,6 +121,9 @@ typings/
 # Next.js build output
 .next
 
+# Generated .git-ftp-include file (Publish workflow will generate this itself)
+.git-ftp-include
+
 # Project files
 /dist/
 *.php
