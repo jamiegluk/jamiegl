@@ -55,18 +55,18 @@ yarn install
 `yarn start`
 
 - Build app once to `/dist/`
-- App served @ `http://localhost:3000`
+- App served @ `http://localhost:1234`
 
 ---
 
 **All commands**
 
-| Command         | Description                                               |
-| --------------- | --------------------------------------------------------- |
-| `yarn start`    | Build app to `/dist/` and serve @ `http://localhost:3000` |
-| `yarn build`    | Build app to `/dist/`                                     |
-| `yarn lint`     | Run Prettier linter                                       |
-| `yarn lint:fix` | Run Prettier linter and fix issues                        |
+| Command         | Description                                                      |
+| --------------- | ---------------------------------------------------------------- |
+| `yarn start`    | Build app as dev to `/dist/` and serve @ `http://localhost:1234` |
+| `yarn build`    | Build production app to `/dist/`                                 |
+| `yarn lint`     | Run Prettier linter                                              |
+| `yarn lint:fix` | Run Prettier linter and fix issues                               |
 
 ## Known Issues
 
@@ -74,12 +74,9 @@ yarn install
 - .htaccess redirects not replicated in express.js test server.
 - Uses outdated and inlined jQuery and normalize.css dependencies.
 - Uses outdated and manually included "Firefox super responsive scroll" and "Stickyfill" dependencies.
-- Build process should be upgraded to use webpack.
-- Code is not minified.
 - Does not use TypeScript, SASS or HTML-templates.
 - > warning " > @prettier/plugin-php@0.14.0" has incorrect peer dependency "prettier@^1.15.0".
 - jamiegl.uk domain does not support HTTPS.
-- GitHub publish workflow not yet implemented.
 
 ## Contributing
 

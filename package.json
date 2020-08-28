@@ -23,11 +23,10 @@
   "license": "MPL-2.0",
   "author": "Jamie Lievesley <jamie@jamiegl.co.uk> (https://jamiegl.co.uk)",
   "scripts": {
-    "build": "yarn run clean && cpy \"**/*\" \"../dist/\" --cwd=src --parents && prettier --write dist",
-    "clean": "rimraf dist/*",
+    "build": "parcel build src/index.html --public-url https://jamiegl.com/",
     "lint": "prettier --check .",
     "lint:fix": "prettier --write .",
-    "start": "yarn run build && node express.js"
+    "start": "parcel src/index.html"
   },
   "husky": {
     "hooks": {
@@ -51,12 +50,37 @@
     "@prettier/plugin-xml": "^0.7.2",
     "@types/jquery": "^1.10.35",
     "@types/node": "^13.13.4",
-    "cpy-cli": "^3.1.0",
-    "express": "^4.17.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.1.7",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-custom-dist-structure": "^1.1.14",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "parcel-plugin-ogimage": "^1.2.0",
+    "parcel-plugin-static-files-copy": "^2.5.0",
+    "parcel-plugin-subresource-integrity": "^0.3.4",
     "prettier": "^2.0.5",
-    "prettier-plugin-packagejson": "^2.2.2",
-    "rimraf": "^3.0.2"
+    "prettier-plugin-packagejson": "^2.2.2"
+  },
+  "customDistStructure": {
+    "config": {
+      "bundle/js": [
+        ".js",
+        ".js.map"
+      ],
+      "bundle/css": [
+        ".css",
+        ".css.map"
+      ],
+      "bundle/img": [
+        ".ico",
+        ".jpg",
+        ".jpeg",
+        ".png",
+        ".svg"
+      ]
+    },
+    "options": {
+      "development": true
+    }
   }
 }

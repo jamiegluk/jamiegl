@@ -6,6 +6,7 @@
     "ybaumes.highlight-trailing-white-spaces",
     "adambaldwin.vscode-nsp",
     "esbenp.prettier-vscode",
-    "azsdktm.securityintellisense"
+    "azsdktm.securityintellisense",
+    "sissel.json-script-tag"
   ]
 }
