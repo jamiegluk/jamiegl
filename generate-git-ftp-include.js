@@ -15,8 +15,9 @@
  */
 
 // Filename constants
-const DIST = "dist";
+const SRC = "src";
 const STATIC = "static";
+const DIST = "dist";
 const BUNDLE = "dist/bundle";
 const PARCEL_MANIFEST = "parcel-manifest.json";
 const GIT_FTP_INCLUDE = ".git-ftp-include";
@@ -24,6 +25,8 @@ const GIT_FTP_INCLUDE = ".git-ftp-include";
 // Imports
 const glob = require("glob");
 const fs = require("fs");
+
+const EOL = require("os").EOL;
 
 // Read parcel-manifest.json as object
 
@@ -85,8 +88,8 @@ for (const kSrcPath of Object.keys(manifest)) {
     distPath = BUNDLE + "/" + files[0];
   }
 
-  transformed += `${distPath}:${kSrcPath}`;
-  transformed += "\n";
+  transformed += `${distPath}:/${SRC}/${kSrcPath}`;
+  transformed += EOL;
 }
 
 if (!transformed) {
@@ -98,8 +101,8 @@ const staticFiles = glob.sync("**/*", { cwd: "./" + STATIC });
 for (const f of staticFiles) {
   const staticPath = STATIC + "/" + f;
   const distPath = DIST + "/" + f;
-  transformed += `${distPath}:${staticPath}`;
-  transformed += "\n";
+  transformed += `${distPath}:/${staticPath}`;
+  transformed += EOL;
 }
 
 // Write to .git-ftp-include
@@ -109,7 +112,7 @@ fs.writeFileSync("./" + GIT_FTP_INCLUDE, transformed);
 fs.unlinkSync(`./${DIST}/${PARCEL_MANIFEST}`);
 
 // Log
-const count = transformed.split("\n").length - 1;
+const count = transformed.split(EOL).length - 1;
 console.log(
   `📝 Mapped ${count} files to ${GIT_FTP_INCLUDE} and deleted ${PARCEL_MANIFEST}`
 );
