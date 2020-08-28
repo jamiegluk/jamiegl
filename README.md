@@ -2,6 +2,7 @@
 
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/jamiegluk/jamiegl?color=blue)](https://github.com/jamiegluk/jamiegl/releases)
 [![GitHub lint Workflow Status](https://img.shields.io/github/workflow/status/jamiegluk/jamiegl/Lint?label=lint)](https://github.com/jamiegluk/jamiegl/actions?query=workflow%3A%22Lint%22)
+[![GitHub build Workflow Status](https://img.shields.io/github/workflow/status/jamiegluk/jamiegl/Build?label=build)](https://github.com/jamiegluk/jamiegl/actions?query=workflow%3A%22Build%22)
 [![GitHub publish Workflow Status](https://img.shields.io/github/workflow/status/jamiegluk/jamiegl/Publish?label=publish)](https://github.com/jamiegluk/jamiegl/actions?query=workflow%3A%22Publish%22)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fjamiegl.com)](https://jamiegl.com)
 
