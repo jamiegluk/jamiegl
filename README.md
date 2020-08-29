@@ -62,12 +62,19 @@ yarn install
 
 **All commands**
 
-| Command         | Description                                                      |
-| --------------- | ---------------------------------------------------------------- |
-| `yarn start`    | Build app as dev to `/dist/` and serve @ `http://localhost:1234` |
-| `yarn build`    | Build production app to `/dist/`                                 |
-| `yarn lint`     | Run Prettier linter                                              |
-| `yarn lint:fix` | Run Prettier linter and fix issues                               |
+| Command                 | Description                                                                       |
+| ----------------------- | --------------------------------------------------------------------------------- |
+| `yarn start`            | Build app as dev to `/dist/` and serve @ `http://localhost:1234`                  |
+| `yarn build`            | Build production app to `/dist/`                                                  |
+| `yarn lint`             | Run Prettier linter                                                               |
+| `yarn lint:fix`         | Run Prettier linter and fix issues                                                |
+|                         |
+| `yarn clean`            | Runs all clean commands below                                                     |
+| `yarn clean:dist`       | Removes _dist_ folder and its contents                                            |
+| `yarn clean:cache`      | Removes Parcel _.cache_ folder and its contents                                   |
+| `yarn build:parcel`     | Just builds Parcel (no post-build commands)                                       |
+| `gen-ftp-include`       | Auto-generates the _.git-ftp-include_ file from Parcel mappings                   |
+| `gen-ftp-include:maybe` | Runs gen-ftp-include only if the _dist/parcel-manifest.json_ mappings file exists |
 
 ## Known Issues
 

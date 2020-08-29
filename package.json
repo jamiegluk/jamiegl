@@ -25,7 +25,11 @@
   "source": "src/index.ejs",
   "browser": "dist/index.html",
   "scripts": {
-    "build": "parcel build src/index.ejs --public-url https://jamiegl.com/ && npm run gen-ftp-include",
+    "build": "run-s build:parcel gen-ftp-include",
+    "build:parcel": "parcel build src/index.ejs --public-url https://jamiegl.com/",
+    "clean": "run-p clean:dist clean:cache",
+    "clean:cache": "rimraf .cache/**",
+    "clean:dist": "rimraf dist/**",
     "gen-ftp-include": "node ./generate-git-ftp-include.js",
     "gen-ftp-include:maybe": "node ./generate-git-ftp-include.js --maybe",
     "lint": "prettier --check .",
@@ -66,7 +70,8 @@
     "parcel-plugin-static-files-copy": "^2.5.0",
     "parcel-plugin-subresource-integrity": "^0.3.4",
     "prettier": "^2.0.5",
-    "prettier-plugin-packagejson": "^2.2.2"
+    "prettier-plugin-packagejson": "^2.2.2",
+    "rimraf": "^3.0.2"
   },
   "customDistStructure": {
     "config": {
