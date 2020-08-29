@@ -16,10 +16,10 @@
 
     <meta charset="utf-8" />
     <!-- SEO for single link without .html -->
-    <link rel="canonical" href="https://jamiegl.com/" />
+    <link rel="canonical" href="<%= process.env.URL %>/" />
     <!-- .com and .co.uk localities -->
-    <link href="https://jamiegl.com/" hreflang="x-default" rel="alternate" />
-    <link href="https://jamiegl.co.uk/" hreflang="en-uk" rel="alternate" />
+    <link href="<%= process.env.URL %>/" hreflang="x-default" rel="alternate" />
+    <link href="<%= process.env.URL_UK %>/" hreflang="en-uk" rel="alternate" />
     <!-- Dimension fixes -->
     <meta
       name="viewport"
@@ -136,11 +136,11 @@
       rel="alternate"
       type="application/rss+xml"
       title="Jamie Lievesley's RSS Feed"
-      href="https://jamiegl.com/rss"
+      href="<%= process.env.URL %>/rss"
     />
     <meta
       name="msapplication-notification"
-      content="frequency=30;polling-uri=https://notifications.buildmypinnedsite.com/?feed=https://jamiegl.com/rss&amp;id=1;polling-uri2=https://notifications.buildmypinnedsite.com/?feed=https://jamiegl.com/rss&amp;id=2;polling-uri3=https://notifications.buildmypinnedsite.com/?feed=https://jamiegl.com/rss&amp;id=3;polling-uri4=https://notifications.buildmypinnedsite.com/?feed=https://jamiegl.com/rss&amp;id=4;polling-uri5=https://notifications.buildmypinnedsite.com/?feed=https://jamiegl.com/rss&amp;id=5;cycle=1"
+      content="frequency=30;polling-uri=https://notifications.buildmypinnedsite.com/?feed=<%= process.env.URL %>/rss&amp;id=1;polling-uri2=https://notifications.buildmypinnedsite.com/?feed=<%= process.env.URL %>/rss&amp;id=2;polling-uri3=https://notifications.buildmypinnedsite.com/?feed=<%= process.env.URL %>/rss&amp;id=3;polling-uri4=https://notifications.buildmypinnedsite.com/?feed=<%= process.env.URL %>/rss&amp;id=4;polling-uri5=https://notifications.buildmypinnedsite.com/?feed=<%= process.env.URL %>/rss&amp;id=5;cycle=1"
     />
 
     <!-- Normalize.js -->
@@ -155,7 +155,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://oldcontent.jamiegl.com/jamie/styles/icons.css"
+      href="<%= process.env.URL_OLD_CONTENT %>/jamie/styles/icons.css"
     />
     <link rel="stylesheet" type="text/css" href="./css/icons.css" />
     <link rel="stylesheet" type="text/css" href="./css/jamie.css" />
@@ -193,7 +193,7 @@
         "ga"
       );
 
-      ga("create", "UA-93309210-1", "auto");
+      ga("create", "<%= process.env.GOOGLE_ANALYTICS_TRACKING_ID %>", "auto");
       ga("send", "pageview");
     </script>
 
@@ -233,7 +233,7 @@
       content="Jamie Lievesley creates for the web, desktop and mobile devices. Currently, a Senior Software Engineer at Biotronics 3D."
     />
     <meta property="og:site_name" content="Jamie Lievesley" />
-    <meta property="og:url" content="https://jamiegl.com" />
+    <meta property="og:url" content="<%= process.env.URL %>" />
     <meta property="og:image" content="img/jamie_1397x1395.jpeg" />
     <meta property="og:image" content="img/jamie_book_256x520.png" />
     <meta property="og:image" content="img/favicon/mstile-310x310.png" />
@@ -712,7 +712,7 @@
               <!-- reCAPTCHA -->
               <div
                 class="g-recaptcha"
-                data-sitekey="6Lf4shUTAAAAAIVpMW9wc_9nGvxY7RHqPsHz8xzZ"
+                data-sitekey="<%= process.env.RECAPTCHA_SITE_KEY %>"
               ></div>
 
               <div class="container-submit">
@@ -727,9 +727,9 @@
               <p>
                 <a
                   class="withIcon accent ic-email"
-                  href="mailto:jamie@jamiegl.co.uk"
+                  href="mailto:<%= process.env.EMAIL %>"
                   itemprop="email"
-                  >jamie@jamiegl.co.uk</a
+                  ><%= process.env.EMAIL %></a
                 >
                 <br />
               </p>

@@ -22,13 +22,15 @@
   },
   "license": "MPL-2.0",
   "author": "Jamie Lievesley <jamie@jamiegl.co.uk> (https://jamiegl.co.uk)",
+  "source": "src/index.ejs",
+  "browser": "dist/index.html",
   "scripts": {
-    "build": "parcel build src/index.html --public-url https://jamiegl.com/ && npm run gen-ftp-include",
+    "build": "parcel build src/index.ejs --public-url https://jamiegl.com/ && npm run gen-ftp-include",
     "gen-ftp-include": "node ./generate-git-ftp-include.js",
     "gen-ftp-include:maybe": "node ./generate-git-ftp-include.js --maybe",
     "lint": "prettier --check .",
     "lint:fix": "prettier --write .",
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.ejs"
   },
   "husky": {
     "hooks": {
@@ -58,6 +60,7 @@
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-bundle-manifest": "^0.2.0",
     "parcel-plugin-custom-dist-structure": "^1.1.14",
+    "parcel-plugin-ejs-template": "^0.2.0",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "parcel-plugin-ogimage": "^1.2.0",
     "parcel-plugin-static-files-copy": "^2.5.0",
