@@ -60,7 +60,7 @@ yarn install
 
 ---
 
-**All commands**
+### All commands
 
 | Command                 | Description                                                                       |
 | ----------------------- | --------------------------------------------------------------------------------- |
@@ -75,6 +75,18 @@ yarn install
 | `yarn build:parcel`     | Just builds Parcel (no post-build commands)                                       |
 | `gen-ftp-include`       | Auto-generates the _.git-ftp-include_ file from Parcel mappings                   |
 | `gen-ftp-include:maybe` | Runs gen-ftp-include only if the _dist/parcel-manifest.json_ mappings file exists |
+
+---
+
+### Variables
+
+Override environmental variables in dotenv files:  
+_.env_ and _.env.development_
+
+By creating local override files:  
+_.env.local_ and _.env.development.local_
+
+These are excluded from commit by the gitignore.
 
 ## Known Issues
 
