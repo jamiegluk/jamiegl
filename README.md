@@ -81,10 +81,10 @@ yarn install
 ### Variables
 
 Override environmental variables in dotenv files:  
-_.env_ and _.env.development_
+'_[.env](.env)_' and '_[.env.development](.env.development)_'
 
 By creating local override files:  
-_.env.local_ and _.env.development.local_
+'**_.env.local_**' and '**_.env.development.local_**'
 
 These are excluded from commit by the gitignore.
 
