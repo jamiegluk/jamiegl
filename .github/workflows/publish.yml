@@ -15,19 +15,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "12"
       - name: Install
-        uses: CultureHQ/actions-yarn@master
-        with:
-          args: install
+        run: yarn install
+
       - name: Lint
-        uses: CultureHQ/actions-yarn@master
-        with:
-          args: lint
+        run: yarn lint
       - name: Build
-        uses: CultureHQ/actions-yarn@master
-        with:
-          args: build
+        run: yarn build
 
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@3.0.0
