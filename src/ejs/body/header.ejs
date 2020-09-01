@@ -1,0 +1,56 @@
+<%#<!--
+  header.ejs
+  Main page <body>: <header> and <nav> snippet.
+  Jamie Lievesley Project
+  Jamie Lievesley (jamie@jamiegl.co.uk)
+  31 Aug 2020 19:00
+-->%>
+
+<!-- Large header with name, logo, parallax scrolling background. -->
+<header>
+  <div id="container-header-brand">
+    <h1 itemprop="name">Jamie Lievesley</h1>
+    <img src="./img/logo_circle_64.png" />
+  </div>
+</header>
+
+<!-- Fragment navigation; as tabs on desktop, drop-down menu on mobile. -->
+<input type="checkbox" id="nav-control-cb" class="hidden" />
+<label for="nav-control-cb" id="nav-control-outside"></label>
+<nav>
+  <ul>
+    <li id="tab-menu">
+      <label for="nav-control-cb">
+        <span class="withIcon accent darkhover ic-menu">Menu</span></label
+      >
+    </li>
+    <li id="tab-header">
+      <a href="#" class="nostyle">
+        <span class="withIcon accent darkhover ic-me">Jamie Lievesley</span></a
+      >
+    </li>
+    <li id="tab-profiles">
+      <a href="#profiles" class="nostyle">
+        <span class="withIcon accent darkhover ic-people">Profiles</span></a
+      >
+    </li>
+    <li id="tab-portfolio">
+      <a href="#portfolio" class="nostyle">
+        <span class="withIcon accent darkhover ic-briefcase">Portfolio</span></a
+      >
+    </li>
+    <li id="tab-about">
+      <a href="#about" class="nostyle">
+        <span class="withIcon accent darkhover ic-information"
+          >About&nbsp;Me</span
+        ></a
+      >
+    </li>
+    <li id="tab-contact">
+      <a href="#contact" class="nostyle">
+        <span class="withIcon accent darkhover ic-email">Contact</span></a
+      >
+    </li>
+  </ul>
+  <label for="nav-control-cb" id="nav-control-inside"></label>
+</nav>

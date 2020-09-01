@@ -1,0 +1,181 @@
+<%#<!--
+  contact.ejs
+  Contact (responsive two columns: form and details).
+  Main page <body> Contact section snippet.
+  Jamie Lievesley Project
+  Jamie Lievesley (jamie@jamiegl.co.uk)
+  31 Aug 2020 19:00
+-->%>
+
+<section id="contact">
+  <h2 class="section-heading withIcon accent ic-email">Contact</h2>
+  <!-- Columns: 2 -->
+  <div class="cols-2">
+    <!-- Col 1: Contact Form -->
+    <article class="textbox container-form form-mark-optionals">
+      <!-- Contact Form ajax loading spinner -->
+      <div
+        id="container-form-loading-contact_form"
+        class="container-form-loading hidden"
+      >
+        <figure class="container-loading-spinner">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            class="spinner"
+          >
+            <circle
+              class="path"
+              cx="50"
+              cy="50"
+              r="20"
+              fill="none"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+          </svg>
+          <figcaption class="ellipsisAfter">Loading</figcaption>
+        </figure>
+      </div>
+
+      <!-- Contact Form status messages -->
+      <div
+        id="container-form-messages-contact_form"
+        class="container-form-messages"
+      >
+        <!-- Contact Form error -->
+        <div id="container-form-fail-contact_form" class="textbox hidden">
+          <h3 class="error">Loading Failed</h3>
+          <p>
+            The content could not be loaded. <br />
+            You can reload the page to try again.
+          </p>
+        </div>
+        <!-- Contact Form success -->
+        <div id="container-form-success-contact_form" class="textbox hidden">
+          <h3>Success</h3>
+          <p>
+            Your message was sent successfully! <br />
+            We will try and handle your query as soon as possible.
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact Form itself -->
+      <form
+        id="contact_form"
+        onsubmit="submitForm('contact_form'); return false;"
+        action="./ajax/contact.php"
+        method="post"
+      >
+        <label for="contact_name">Name</label>
+        <input
+          id="contact_name"
+          name="name"
+          value=""
+          maxlength="50"
+          required=""
+          type="text"
+          autocomplete="name"
+        />
+        <label for="contact_email">Reply email</label>
+        <input
+          id="contact_email"
+          name="email"
+          value=""
+          maxlength="255"
+          type="email"
+          autocomplete="email"
+        />
+        <label for="contact_subject">Subject</label>
+        <input
+          id="contact_subject"
+          name="subject"
+          value=""
+          maxlength="50"
+          required=""
+          type="text"
+          autocomplete="off"
+        />
+        <label for="contact_message">Message</label>
+        <textarea
+          id="contact_message"
+          name="message"
+          maxlength="255"
+          rows="5"
+          required=""
+          autocomplete="off"
+        ></textarea>
+
+        <br />
+
+        <!-- Meta-parameters -->
+        <input
+          id="contact_webpage"
+          name="webpage"
+          value="jamiegl"
+          type="hidden"
+        />
+        <input id="contact_formtask" name="task" value="send" type="hidden" />
+
+        <!-- reCAPTCHA -->
+        <div
+          class="g-recaptcha"
+          data-sitekey="<%= process.env.RECAPTCHA_SITE_KEY %>"
+        ></div>
+
+        <div class="container-submit">
+          <input id="contact_submit" value="Send" type="submit" />
+        </div>
+      </form>
+    </article>
+
+    <!-- Col 2: Contact Details -->
+    <article class="textbox">
+      <address>
+        <p>
+          <a
+            class="withIcon accent ic-email"
+            href="mailto:<%= process.env.EMAIL %>"
+            itemprop="email"
+            ><%= process.env.EMAIL %></a
+          >
+          <br />
+        </p>
+        <p
+          class="secondary"
+          itemprop="address"
+          itemscope
+          itemtype="http://schema.org/PostalAddress"
+        >
+          <span class="address-icon withIcon branded ic-me"></span>
+          <span itemprop="contactType">Jamie Lievesley</span>
+          <br />
+          <span itemprop="addressLocality">Edinburgh</span> <br />
+          <span itemprop="postalCode">EH11</span> <br />
+          <span itemprop="addressRegion">UK</span>
+        </p>
+        <p
+          class="secondary"
+          itemprop="address"
+          itemscope
+          itemtype="http://schema.org/PostalAddress"
+        >
+          <span class="address-icon withIcon branded ic-b3d"></span>
+          <span itemprop="contactType">Biotronics 3D</span>
+          <br />
+          <span itemprop="streetAddress">31 Palmerston Place</span> <br />
+          <span itemprop="addressLocality">Edinburgh</span> <br />
+          <span itemprop="postalCode">EH12 5AP</span> <br />
+          <span itemprop="addressRegion">UK</span> <br />
+          <a
+            itemprop="url"
+            href="https://www.3dnetmedical.com/public/"
+            target="_blank"
+            >3dnetmedical.com</a
+          >
+        </p>
+      </address>
+    </article>
+  </div>
+</section>

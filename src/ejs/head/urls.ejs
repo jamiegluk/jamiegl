@@ -1,0 +1,13 @@
+<%#<!--
+  urls.ejs
+  Main page <head> page URLs canonical, alternative etc. snippet.
+  Jamie Lievesley Project
+  Jamie Lievesley (jamie@jamiegl.co.uk)
+  31 Aug 2020 18:35
+-->%>
+
+<!-- SEO for single link without .html -->
+<link rel="canonical" href="<%= process.env.URL %>/" />
+<!-- .com and .co.uk localities -->
+<link href="<%= process.env.URL %>/" hreflang="x-default" rel="alternate" />
+<link href="<%= process.env.URL_UK %>/" hreflang="en-uk" rel="alternate" />

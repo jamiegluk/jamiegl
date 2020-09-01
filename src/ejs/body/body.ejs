@@ -1,0 +1,32 @@
+<%#<!--
+  body.ejs
+  Main page <body> snippet.
+  Jamie Lievesley Project
+  Jamie Lievesley (jamie@jamiegl.co.uk)
+  31 Aug 2020 18:25
+-->%>
+
+<body itemscope itemtype="http://schema.org/Person">
+  <%- include("header"); -%>
+
+  <!-- Page content (non-chrome) container. -->
+  <div id="container-main">
+    <!-- Short summary text below header. -->
+    <%- include("summary"); -%>
+
+    <!-- Grid of Profile link buttons as Tiles -->
+    <%- include("profiles"); -%>
+
+    <!-- Grid of Portfolio projects as Tiles -->
+    <%- include("portfolio"); -%>
+
+    <!-- About Me (with expanding text/image) -->
+    <%- include("about"); -%>
+
+    <!-- Contact (responsive two columns: form and details) -->
+    <%- include("contact"); -%>
+
+    <!-- Copyright and About (legal etc) Footer -->
+    <%- include("footer"); -%>
+  </div>
+</body>

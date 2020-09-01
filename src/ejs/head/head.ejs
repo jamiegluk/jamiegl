@@ -1,0 +1,37 @@
+<%#<!--
+  head.ejs
+  Main page <head> snippet.
+  Jamie Lievesley Project
+  Jamie Lievesley (jamie@jamiegl.co.uk)
+  31 Aug 2020 18:20
+-->%>
+
+<head
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#
+                website: http://ogp.me/ns/website#"
+>
+  <title>Jamie Lievesley</title>
+
+  <meta charset="utf-8" />
+
+  <!-- URLs -->
+  <%- include("urls"); -%>
+
+  <!-- Devices -->
+  <%- include("devices"); -%>
+
+  <!-- Favicon -->
+  <%- include("favicon"); -%>
+
+  <!-- Descriptive -->
+  <%- include("descriptive"); -%>
+
+  <!-- RSS -->
+  <%- include("rss"); -%>
+
+  <!-- Styles -->
+  <%- include("styles"); -%>
+
+  <!-- Scripts -->
+  <%- include("scripts"); -%>
+</head>

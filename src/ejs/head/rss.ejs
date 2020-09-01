@@ -1,0 +1,18 @@
+<%#<!--
+  rss.ejs
+  Main page <head> RSS definitions snippet.
+  Jamie Lievesley Project
+  Jamie Lievesley (jamie@jamiegl.co.uk)
+  31 Aug 2020 18:35
+-->%>
+
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="Jamie Lievesley's RSS Feed"
+  href="<%= process.env.URL %>/rss"
+/>
+<meta
+  name="msapplication-notification"
+  content="frequency=30;polling-uri=https://notifications.buildmypinnedsite.com/?feed=<%= process.env.URL %>/rss&amp;id=1;polling-uri2=https://notifications.buildmypinnedsite.com/?feed=<%= process.env.URL %>/rss&amp;id=2;polling-uri3=https://notifications.buildmypinnedsite.com/?feed=<%= process.env.URL %>/rss&amp;id=3;polling-uri4=https://notifications.buildmypinnedsite.com/?feed=<%= process.env.URL %>/rss&amp;id=4;polling-uri5=https://notifications.buildmypinnedsite.com/?feed=<%= process.env.URL %>/rss&amp;id=5;cycle=1"
+/>

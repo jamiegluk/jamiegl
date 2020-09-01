@@ -1,0 +1,84 @@
+<%#<!--
+  about.ejs
+  About Me (with expanding text/image).
+  Main page <body> About section snippet.
+  Jamie Lievesley Project
+  Jamie Lievesley (jamie@jamiegl.co.uk)
+  31 Aug 2020 19:00
+-->%>
+
+<section id="about">
+  <h2 class="section-heading withIcon accent ic-information">
+    About&nbsp;Me
+  </h2>
+  <article class="textbox" data-fitimgright="true">
+    <img
+      src="./img/jamie_book_256x128.png"
+      title="Me"
+      class="right"
+      style="height: 128px;"
+      itemprop="image"
+    />
+    <p>
+      I graduated with a First Class honours and a 4.08 GPA in
+      <span itemprop="award">Computing BSc (Hons)</span> from the
+      <span itemprop="alumniOf">University of Abertay</span>
+      in Dundee, Scotland. I've worked full time as a
+      <span itemprop="jobTitle">Senior Software Engineer</span> at the
+      <span itemprop="affiliation">Biotronics 3D</span> Edinburgh Innovation
+      Centre, since 2017.
+    </p>
+    <input
+      id="expandable-about-controlcb"
+      type="checkbox"
+      autocomplete="false"
+      class="expandable-controlcb"
+      onload="$(this).prop('checked', false)"
+    />
+    <span class="expandable">
+      <p>
+        Biotronics 3D is a prominent London-based developer of medical imaging
+        and radiology systems; such as RIS, PACS, Viewer, Patient Portal and
+        Teleradiology, via their product <i>3Dnet</i>. The application -
+        operating in 15 countries worldwide, including NHS trusts - utilises HL7
+        and DICOM standards technology.
+      </p>
+      <p>
+        On the web, I cater to the entire eco-system. From front-end design and
+        deployment, to back end scripting and information systems. I am
+        proficient in HTML5, CSS3, and JavaScript. Daily, I work with
+        Typescript, React, LessCSS, MobX and Bootstrap on the front-end; .Net,
+        NodeJS and SQL Server on the backend. I also may use PHP, NodeJS,
+        Python, SASS, MySQL and Apache Server technologies. I can use various
+        build tools; such as Yarn, NPM, Webpack, Git, SVN, Grunt and more.
+      </p>
+      <p>
+        Websites I develop always use modern design ideologies, such as Google's
+        Material Design, with clean, colour-coordinated interfaces that look
+        good, whilst being designed with ergonomics at the core. Responsive
+        design and accessibility are key. I have a basic understanding of
+        enterprise-level, cloud systems, including Azure and Hadoop.
+      </p>
+      <p>
+        Specialising in C# and Java for desktop, but with experience in Python,
+        Pascal and more, I produce cross-platform polished software. These
+        skills also carry over to Android for development with mobile
+        technologies.
+      </p>
+      <p>
+        My Honours project, entitled "<i
+          >Implementing an Electronic Student Self-Service Attendance System for
+          University Classrooms and Lectures</i
+        >", aims to replace outdated paper-based class register with an
+        electronic, networked check-in process. This uses a Raspberry Pi device
+        hooked up to an RFID card reader for scanning student cards and,
+        alternatively, a bluetooth transceiver for detecting student mobile
+        devices. For this, I succeeded and received an A+ grade.
+      </p>
+    </span>
+    <label
+      class="nostyle withIcon accent darkhover ic-more"
+      for="expandable-about-controlcb"
+    ></label>
+  </article>
+</section>
