@@ -53,11 +53,15 @@
     "last 1000 ChromeAndroid versions and since 2017-05",
     "last 1000 FirefoxAndroid versions and since 2017-05, IE 11, IE 10"
   ],
+  "resolutions": {
+    "caniuse-lite": "^1.0.30001199"
+  },
   "devDependencies": {
-    "@prettier/plugin-php": "^0.14.0",
-    "@prettier/plugin-xml": "^0.12.0",
+    "@prettier/plugin-php": "^0.16.1",
+    "@prettier/plugin-xml": "^0.13.1",
     "@types/jquery": "^1.10.35",
     "@types/node": "^14.6.2",
+    "caniuse-lite": "^1.0.30001199",
     "glob": "^7.1.6",
     "husky": "^4.2.5",
     "lint-staged": "^10.1.7",
