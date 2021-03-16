@@ -54,7 +54,7 @@
     "last 1000 FirefoxAndroid versions and since 2017-05, IE 11, IE 10"
   ],
   "resolutions": {
-    "caniuse-lite": "^1.0.30001199",
+    "caniuse-lite": "^1.0.30001202",
     "node-forge": "^0.10.0"
   },
   "devDependencies": {
