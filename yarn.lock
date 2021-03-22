@@ -4379,9 +4379,10 @@ parcel-plugin-bundle-manifest@^0.2.0:
   resolved "https://registry.yarnpkg.com/parcel-plugin-bundle-manifest/-/parcel-plugin-bundle-manifest-0.2.0.tgz#fd1eb48f16c4bca05167f754834b258b156ccb09"
   integrity sha512-xS4HlwvAggqHx53qWsAzTmA5mD6ZMBR4bJBcW11jVjgAVsY2fdYw7aK56A3JNWG6lqs6/crcPrIcM0rzb4UmVg==
 
-"parcel-plugin-custom-dist-structure@https://github.com/jamiegluk/parcel-plugin-custom-dist-structure":
-  version "1.1.16"
-  resolved "https://github.com/jamiegluk/parcel-plugin-custom-dist-structure#31f4ecb2e401094cd0ee0c70d9c44a0585f93240"
+parcel-plugin-custom-dist-structure@1.1.17:
+  version "1.1.17"
+  resolved "https://registry.yarnpkg.com/parcel-plugin-custom-dist-structure/-/parcel-plugin-custom-dist-structure-1.1.17.tgz#64004c073456b9515623c82ebccbd0922e1039ed"
+  integrity sha512-GDI1z/ZWqt3nBqG5IefDHUzmnaM0W1HdiicdD710gxIDajhKWADN16AWFGMC+TvSpylSG9Uo5QZHQjKnJ4r1JQ==
   dependencies:
     dependency-graph "^0.11.0"
     glob "^7.1.6"
