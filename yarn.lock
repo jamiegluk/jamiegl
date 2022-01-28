@@ -4089,10 +4089,10 @@ node-addon-api@^1.7.1:
   resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-1.7.2.tgz#3df30b95720b53c24e59948b49532b662444f54d"
   integrity sha512-ibPK3iA+vaY1eEjESkQkM0BbCqFOaZMiXRTtdB0u7b4djtY6JnsjvPdUHVMg6xQt3B8fpTTWHI9A+ADjM9frzg==
 
-node-forge@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.10.0.tgz#32dea2afb3e9926f02ee5ce8794902691a676bf3"
-  integrity sha512-PPmu8eEeG9saEUvI97fm4OYxXVB6bFvyNTyiUOBichBpFG8A1Ljw3bY62+5oOjDEMHRnd0Y7HQ+x7uzxOzC6JA==
+node-forge@^0.10.0, node-forge@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-1.2.1.tgz#82794919071ef2eb5c509293325cec8afd0fd53c"
+  integrity sha512-Fcvtbb+zBcZXbTTVwqGA5W+MKBj56UjVRevvchv5XrcyXbmNdesfZL37nlcWOfpgHhgmxApw3tQbTr4CqNmX4w==
 
 node-libs-browser@^2.0.0:
   version "2.2.1"
@@ -4452,10 +4452,10 @@ parcel-plugin-bundle-manifest@^0.2.0:
   resolved "https://registry.yarnpkg.com/parcel-plugin-bundle-manifest/-/parcel-plugin-bundle-manifest-0.2.0.tgz#fd1eb48f16c4bca05167f754834b258b156ccb09"
   integrity sha512-xS4HlwvAggqHx53qWsAzTmA5mD6ZMBR4bJBcW11jVjgAVsY2fdYw7aK56A3JNWG6lqs6/crcPrIcM0rzb4UmVg==
 
-parcel-plugin-custom-dist-structure@1.1.17:
-  version "1.1.17"
-  resolved "https://registry.yarnpkg.com/parcel-plugin-custom-dist-structure/-/parcel-plugin-custom-dist-structure-1.1.17.tgz#64004c073456b9515623c82ebccbd0922e1039ed"
-  integrity sha512-GDI1z/ZWqt3nBqG5IefDHUzmnaM0W1HdiicdD710gxIDajhKWADN16AWFGMC+TvSpylSG9Uo5QZHQjKnJ4r1JQ==
+parcel-plugin-custom-dist-structure@1.1.18:
+  version "1.1.18"
+  resolved "https://registry.yarnpkg.com/parcel-plugin-custom-dist-structure/-/parcel-plugin-custom-dist-structure-1.1.18.tgz#bf66860cd307b95a78ee1118537b63471dfa6e91"
+  integrity sha512-PoFSZUkOo8+v26y9nZKDKFXws6lD8+VBpofL3SlkbTKT8ny2/BOit9oHMpNs4RwoFYrkbHzb9G8/yZytiUoTIg==
   dependencies:
     dependency-graph "^0.11.0"
     glob "^7.1.6"
@@ -4628,9 +4628,9 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
-"php-parser@git+https://github.com/glayzzle/php-parser.git#27abcb2337ac6450c068ef064982dfabf77916a5":
+"php-parser@https://github.com/glayzzle/php-parser#27abcb2337ac6450c068ef064982dfabf77916a5":
   version "3.0.2"
-  resolved "git+https://github.com/glayzzle/php-parser.git#27abcb2337ac6450c068ef064982dfabf77916a5"
+  resolved "https://github.com/glayzzle/php-parser#27abcb2337ac6450c068ef064982dfabf77916a5"
 
 physical-cpu-count@^2.0.0:
   version "2.0.0"
