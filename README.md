@@ -104,6 +104,6 @@ Not accepting pull requests. This is my personal website.
 
 ## Copyright & Licensing
 
-© Copyright Jamie Lievesley 2020.  
+© Copyright Jamie Lievesley 2017-2022.  
 Code licensed for use under Mozilla Public License Version 2.0.  
 See [COPYRIGHT](COPYRIGHT.md), [LICENSE](LICENSE).
