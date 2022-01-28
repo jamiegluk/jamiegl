@@ -92,8 +92,7 @@ These are excluded from commit by the gitignore.
 
 - \*.php and .htaccess files not included in repo.
 - .htaccess redirects not replicated in express.js test server.
-- Uses inlined jQuery CDN dependency.
-- Uses outdated and inlined normalize.css CDN dependency.
+- Uses inlined jQuery and normalize.css CDN dependencies.
 - Uses outdated and manually included "Firefox super responsive scroll" and "Stickyfill" dependencies.
 - Does not use TypeScript, SASS.
 - jamiegl.uk domain does not support HTTPS.
