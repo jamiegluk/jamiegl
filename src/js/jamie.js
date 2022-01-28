@@ -246,11 +246,19 @@ $(function () {
 
   // Jamie image expand
   var $img = $("#about img");
+  var $aboutMoreLabel = $("label[for=expandable-about-controlcb]");
   $("#expandable-about-controlcb").on("change", function () {
     var expanded = $(this).is(":checked");
     $img.toggleClass("expanded", expanded);
+    $aboutMoreLabel.attr("aria-expanded", expanded);
     // Page resize could alter selected nav item
     setTimeout(updateNavBar, 251);
+  });
+  // Allow keyboard to toggle via the label
+  $aboutMoreLabel.on("keydown", function (e) {
+    if (e.code === "Enter" || e.keyCode === 13) {
+      $("#expandable-about-controlcb").click();
+    }
   });
 
   // Optional fields hide optional bg when non-empty

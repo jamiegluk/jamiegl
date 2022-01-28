@@ -8,15 +8,13 @@
 -->%>
 
 <section id="about">
-  <h2 class="section-heading withIcon accent ic-information">
-    About&nbsp;Me
-  </h2>
+  <h2 class="section-heading withIcon accent ic-information">About&nbsp;Me</h2>
   <article class="textbox" data-fitimgright="true">
     <img
       src="./img/jamie_book_256x128.png"
       title="Me"
       class="right"
-      style="height: 128px;"
+      style="height: 128px"
       itemprop="image"
     />
     <p>
@@ -35,7 +33,7 @@
       class="expandable-controlcb"
       onload="$(this).prop('checked', false)"
     />
-    <span class="expandable">
+    <span id="expandable-about-region" class="expandable" aria-role="region">
       <p>
         Biotronics 3D is a prominent London-based developer of medical imaging
         and radiology systems; such as RIS, PACS, Viewer, Patient Portal and
@@ -79,6 +77,9 @@
     <label
       class="nostyle withIcon accent darkhover ic-more"
       for="expandable-about-controlcb"
+      aria-controls="expandable-about-region"
+      tabIndex="0"
+      aria-expanded="false"
     ></label>
   </article>
 </section>
