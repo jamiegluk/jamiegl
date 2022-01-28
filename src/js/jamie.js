@@ -6,6 +6,8 @@
 	20 February 2017 21:45
 */
 
+import Stickyfill from "stickyfilljs";
+
 var HEADER_IMAGE_HEIGHT = 228;
 var MOBILE_NAV_ITEM_HEIGHT = 48;
 var NAV_SCROLL_SECTION_ZONE = 100;
@@ -202,7 +204,7 @@ $(function () {
   positionHeaderImage();
 
   // Nav menu position:sticky polyfill
-  $("nav").Stickyfill();
+  Stickyfill.add($("nav"));
 
   // Floated right image blocking height
   $("#container-main")

@@ -53,6 +53,9 @@
     "caniuse-lite": "^1.0.30001202",
     "node-forge": "^1.2.1"
   },
+  "dependencies": {
+    "stickyfilljs": "^2.1.0"
+  },
   "devDependencies": {
     "@prettier/plugin-php": "^0.17.6",
     "@prettier/plugin-xml": "^1.2.0",
