@@ -11,6 +11,9 @@
 #project-dummy h3::before {
   background-image: url("./../img/project/dummy32.png");
 }
+#project-3dnet h3::before {
+  background-image: url("./../img/project/3dnet32.png");
+}
 #project-4connectai h3::before {
   background-image: url("./../img/project/fcai32.png");
 }
