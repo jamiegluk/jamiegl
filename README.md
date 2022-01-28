@@ -92,10 +92,10 @@ These are excluded from commit by the gitignore.
 
 - \*.php and .htaccess files not included in repo.
 - .htaccess redirects not replicated in express.js test server.
-- Uses outdated and inlined jQuery and normalize.css dependencies.
+- Uses inlined jQuery CDN dependency.
+- Uses outdated and inlined normalize.css CDN dependency.
 - Uses outdated and manually included "Firefox super responsive scroll" and "Stickyfill" dependencies.
 - Does not use TypeScript, SASS.
-- > warning " > @prettier/plugin-php@0.14.0" has incorrect peer dependency "prettier@^1.15.0".
 - jamiegl.uk domain does not support HTTPS.
 
 ## Contributing
