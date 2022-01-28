@@ -121,9 +121,6 @@ typings/
 # Next.js build output
 .next
 
-# Husky
-/husky/_/
-
 # Generated .git-ftp-include file (Publish workflow will generate this itself)
 .git-ftp-include
 

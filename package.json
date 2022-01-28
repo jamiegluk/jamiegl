@@ -34,8 +34,12 @@
     "gen-ftp-include:maybe": "node ./generate-git-ftp-include.js --maybe",
     "lint": "prettier --check .",
     "lint:fix": "prettier --write .",
-    "start": "parcel src/index.ejs",
-    "prepare": "husky install"
+    "start": "parcel src/index.ejs"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.{js,css,md,json,html,yml,php}": "prettier --write"
@@ -63,7 +67,7 @@
     "@types/node": "^17.0.13",
     "caniuse-lite": "^1.0.30001202",
     "glob": "^7.1.6",
-    "husky": "^7.0.0",
+    "husky": "^4.2.5",
     "lint-staged": "^12.3.2",
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.5",
