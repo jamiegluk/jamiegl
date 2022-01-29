@@ -199,6 +199,9 @@ function submitForm(aFormId) {
 } // END FUNCTION submitForm
 
 $(function () {
+  // Make functions available globally
+  window.submitForm = submitForm;
+
   // Header parallax scrolling
   $(window).scroll(positionHeaderImage);
   positionHeaderImage();
