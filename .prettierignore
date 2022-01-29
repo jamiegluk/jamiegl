@@ -123,4 +123,5 @@ typings/
 .next
 
 # Project files
+/assets/
 /dist/
