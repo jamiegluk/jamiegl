@@ -10,35 +10,24 @@
 <section id="about">
   <h2 class="section-heading withIcon accent ic-information">About&nbsp;Me</h2>
   <article class="textbox" data-fitimgright="true">
-    <img
-      src="./img/jamie_book_256x128.png"
-      title="Me"
-      class="right"
-      style="height: 128px"
-      itemprop="image"
-    />
+    <img src="./img/jamie_book_256x128.png" title="Me" class="right" style="height: 128px" itemprop="image" />
     <p>
       I graduated with a First Class honours and a 4.08 GPA in
       <span itemprop="award">Computing BSc (Hons)</span> from the
-      <span itemprop="alumniOf">University of Abertay</span>
+      <a href="https://www.abertay.ac.uk/" target="_blank" itemprop="alumniOf">University of Abertay</a>
       in Dundee, Scotland. I've worked full time as a
-      <span itemprop="jobTitle">Senior Software Engineer</span> at the
-      <span itemprop="affiliation">Biotronics 3D</span> Edinburgh Innovation
-      Centre, since 2017.
+      <span itemprop="jobTitle">Senior Software Engineer</span> at
+      <a href="https://openrad.com" target="_blank" itemprop="affiliation">OpenRad</a>, in Edinburgh, since 2017.
     </p>
-    <input
-      id="expandable-about-controlcb"
-      type="checkbox"
-      autocomplete="false"
-      class="expandable-controlcb"
-      onload="$(this).prop('checked', false)"
-    />
+    <input id="expandable-about-controlcb" type="checkbox" autocomplete="false" class="expandable-controlcb"
+      onload="$(this).prop('checked', false)" />
     <span id="expandable-about-region" class="expandable" aria-role="region">
       <p>
-        Biotronics 3D is a prominent London-based developer of medical imaging
+        OpenRad (formerly Biotronics 3D) is a prominent UK-based developer of medical imaging
         and radiology systems; such as RIS, PACS, Viewer, Patient Portal and
-        Teleradiology, via their product <i>3Dnet</i>. The application -
-        operating in 15 countries worldwide, including NHS trusts - utilises HL7
+        Teleradiology, via their <i>OpenRad Cloud</i> product. The application -
+        operating in many countries worldwide, including NHS trusts, serving over 5 million studies yearly - utilises
+        HL7
         and DICOM standards technology.
       </p>
       <p>
@@ -64,22 +53,15 @@
         technologies.
       </p>
       <p>
-        My Honours project, entitled "<i
-          >Implementing an Electronic Student Self-Service Attendance System for
-          University Classrooms and Lectures</i
-        >", aims to replace outdated paper-based class register with an
+        My Honours project, entitled "<i>Implementing an Electronic Student Self-Service Attendance System for
+          University Classrooms and Lectures</i>", aims to replace outdated paper-based class register with an
         electronic, networked check-in process. This uses a Raspberry Pi device
         hooked up to an RFID card reader for scanning student cards and,
         alternatively, a bluetooth transceiver for detecting student mobile
         devices. For this, I succeeded and received an A+ grade.
       </p>
     </span>
-    <label
-      class="nostyle withIcon accent darkhover ic-more"
-      for="expandable-about-controlcb"
-      aria-controls="expandable-about-region"
-      tabIndex="0"
-      aria-expanded="false"
-    ></label>
+    <label class="nostyle withIcon accent darkhover ic-more" for="expandable-about-controlcb"
+      aria-controls="expandable-about-region" tabIndex="0" aria-expanded="false"></label>
   </article>
 </section>
