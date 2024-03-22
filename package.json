@@ -25,13 +25,10 @@
   "source": "src/index.ejs",
   "browser": "dist/index.html",
   "scripts": {
-    "build": "run-s build:parcel gen-ftp-include",
-    "build:parcel": "parcel build src/index.ejs --public-url https://jamiegl.com/",
+    "build": "parcel build src/index.ejs --public-url https://jamiegl.com/",
     "clean": "run-p clean:dist clean:cache",
     "clean:cache": "rimraf .cache/**",
     "clean:dist": "rimraf dist/**",
-    "gen-ftp-include": "node ./generate-git-ftp-include.js",
-    "gen-ftp-include:maybe": "node ./generate-git-ftp-include.js --maybe",
     "lint": "prettier --check .",
     "lint:fix": "prettier --write .",
     "start": "parcel src/index.ejs"
